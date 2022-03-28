@@ -1,139 +1,105 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-img{
-    width: 100px;
-    height: 100px;
+body{
+    background-color: #a6abad;
 }
-
 .main-content{
     min-height: 1000px;
     width: 90%;
     margin: 20px auto;
     display: grid;
+    /* grid-template-rows: 20% 00%; */
     grid-template-columns: 300px 700px;
 }
-section{
-    display: block;
-}
+/* Left Section */
 .left-section{
     grid-column: span 1;
-    background-color: #1f2937;
-}
-.right-section{
-    grid-column: span 1/span 2;
-    background-color: #f7f7f7;
+    background-color: #242531;
 }
 .left-content{
     padding: 1rem;
 }
-.profile-details{
-    background-color: #000;
-}
 .profile-image{
-    padding: 1rem;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    border: 5px solid #ffffff;
+    margin: auto;
+    border: 5px solid #fff;
     border-radius: 30%;
+    width: 60%;
+    height: auto;
 }
 .name{
-    color:#f5f5f5;
-    font-size: 1.2rem;
-    font-weight: 700px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    padding: 0.8rem;
-    text-transform: uppercase;
+   font-size: 1.2rem;
+   font-weight: 700;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.02px;
+   padding: 00.8rem;
+   color: #f5f5f5;
 }
 .designation{
-    color: #94d9ef;
     font-size: 1rem;
-    text-transform: uppercase;
     text-align: center;
-    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    padding-bottom: 00.5rem;
+    color: #94d9ea;
 }
 .description{
-    color: #f5f5f5;
     font-size: 0.75rem;
     text-align: center;
     padding: 1rem;
-}
-.contact-info{
-    padding-top: 1rem;
-}
-.personal-details{
-    margin-top: 1rem;
-    padding: 0.5rem;
     color: #f5f5f5;
-    font-size: 1rem;
-    font-weight: 500px;
 }
-.icon{
-    padding: 0.5rem;
+.contact-item{
+    padding: 1rem;
 }
-
 .social-media{
     display: flex;
     justify-content: space-around;
+    padding: 0.5rem;
 }
-.skills-title{
-    color: #94d9ef;
+.icon{
+    margin: 0.2rem;
+    padding: 0.5rem;
+    color:#f5f5f5;
+    font-weight: 400;
+}
+.skills{
     font-size: 0.75rem;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
     padding: 1rem 0.5rem;
-}
-.skill-name{
-    font-size: 0.5rem;
-    text-align: left;
-    padding-bottom: 0.5rem;
     color: #f5f5f5;
 }
-.skill-progress{
-    padding-bottom: 0.5rem ;
-    
+.skill-name{
+   font-size: 0.65rem;
+   text-align: left;
+   padding-bottom: 0.5rem;
+}
+.skill-item{
+    padding: 00.5rem;
 }
 .progress-bar{
     border: 1px solid #fff;
     height: 4px;
-    color: #fff;
     background-color: #f5f5f5;
+ 
+}
+ /* Right Section */
+.right-section{
+    grid-column: span 1/ span 2;
+    background-color: #f7f7f7;
 }
 .right-main-content{
     padding: 2rem 3rem;
 }
-.right-title{
+.right-titel{
     font-size: 1.2rem;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     padding: 0.5rem;
+    letter-spacing: 1px;
 }
-.para{
-    font-size: 1rem;
-    font-weight: 400px;
-    letter-spacing: 0.5px;
-}
-.education-content{
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: 500px 100px;
-}
-
-.education-para{
-    font-size: 1rem;
-    padding-top: 0.5rem;
-}
-@media screen and (max-width: 674px) {
-    .main-content{
-        display: grid;
-        grid-template-columns:repeat(1, 1fr);
-    }
-  }
