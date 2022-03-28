@@ -5,6 +5,8 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Write CSS code below */
 body{
     background-color: #a6abad;
 }
@@ -103,3 +105,10 @@ body{
     padding: 0.5rem;
     letter-spacing: 1px;
 }
+
+@media screen and (min-width: 0px)and (max-width: 673px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
